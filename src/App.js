@@ -1,6 +1,7 @@
 import React from "react";
 import { Counter } from "./Counter";
 import { Opposite } from "./Opposite";
+import { Accordion } from "./Accordion";
 import "./App.css";
 import PropTypes from "prop-types";
 
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Counter />
       <Opposite />
+      <Accordion />
     </div>
   );
 }
