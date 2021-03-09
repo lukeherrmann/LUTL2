@@ -5,9 +5,14 @@ export function Input() {
 
   return (
     <div>
+      <h3>{inputValue && <h3>{inputValue}</h3>}</h3>
       <input
         value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
+        onChange={(e) => {
+          if (!e.target.value.includes("e")) {
+            setInputValue(e.target.value);
+          }
+        }}
       />
     </div>
   );
