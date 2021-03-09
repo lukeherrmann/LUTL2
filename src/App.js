@@ -1,16 +1,15 @@
 import React from "react";
 import { Counter } from "./Counter";
-import { Opposite } from "./Opposite";
-import { Accordion } from "./Accordion";
+import { Input } from "./Input"
 import "./App.css";
 import PropTypes from "prop-types";
 
 function App() {
   return (
     <div className="App">
-      <Counter />
-      <Opposite />
-      <Accordion />
+      <Input />
+      <br />
+      <Counter />  
     </div>
   );
 }
